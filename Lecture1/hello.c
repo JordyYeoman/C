@@ -1,4 +1,6 @@
 #include <stdio.h>
+#include <ctype.h>
+#include <stdbool.h>
 
 char get_string(char *str) {
  printf("Enter a string: ");
@@ -13,4 +15,7 @@ int main(void) {
     get_string(bigBossString); // Passing our string pointer to function that will collect user input.
 
     printf("You entered: %s\n", bigBossString);
+
+    // Check if uppercase or lowercase function
+
 }
