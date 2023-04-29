@@ -1,10 +1,24 @@
 #include <stdio.h>
 
+void startSystem() {
+    // Create runtime
+    printf("Creating runtime...\n");
+    // Setup defaults
+}
+
 int main(void) {
-    char deadlyBra[100];
+    char userAnswer;
     
-    char c = scanf("Pleas enter a random letter: %s", deadlyBra)    
+    printf("Do you want to boot system? ");
+    userAnswer = getchar();    
 
     // Conditionally check user input
+    if (userAnswer == 'y' || userAnswer == 'Y') {
+        printf("System Booting...\n");
+        startSystem();
+    }
 
+    if(userAnswer == 'n' || userAnswer == 'N') {
+        printf("System shutting down...\n");
+    }
 }
